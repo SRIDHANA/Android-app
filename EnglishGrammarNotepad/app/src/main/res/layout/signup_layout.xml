@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/signup_layout">
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_below="@+id/emailTextView"
+        android:layout_alignRight="@+id/emailIdEditText"
+        android:layout_alignEnd="@+id/emailIdEditText"
+        android:layout_marginTop="18dp"
+        android:id="@+id/phoneEditText" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/addressEditText"
+        android:layout_alignBaseline="@+id/addressTextView"
+        android:layout_alignBottom="@+id/addressTextView"
+        android:layout_alignLeft="@+id/phoneEditText"
+        android:layout_alignStart="@+id/phoneEditText" />
+
+    <TextView
+        android:text="Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneTextView"
+        android:layout_alignBaseline="@+id/phoneEditText"
+        android:layout_alignBottom="@+id/phoneEditText"
+        android:layout_alignLeft="@+id/emailTextView"
+        android:layout_alignStart="@+id/emailTextView" />
+
+    <TextView
+        android:text="Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/addressTextView"
+        android:layout_below="@+id/phoneEditText"
+        android:layout_alignLeft="@+id/phoneTextView"
+        android:layout_alignStart="@+id/phoneTextView" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailIdEditText"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_alignBaseline="@+id/emailTextView"
+        android:layout_alignBottom="@+id/emailTextView"
+        android:layout_toRightOf="@+id/addressTextView"
+        android:layout_toEndOf="@+id/addressTextView" />
+
+    <TextView
+        android:text="EmailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:id="@+id/emailTextView"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerButton"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/addressEditText"
+        android:layout_alignLeft="@+id/addressEditText"
+        android:layout_alignStart="@+id/addressEditText" />
+
+</RelativeLayout>

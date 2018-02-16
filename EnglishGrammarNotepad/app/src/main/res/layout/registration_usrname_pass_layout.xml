@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/usrPwdLayout">
+
+    <TextView
+        android:text="UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="41dp"
+        android:id="@+id/userNameTxtView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordTxtView"
+        android:layout_alignBaseline="@+id/passwordEditText"
+        android:layout_alignBottom="@+id/passwordEditText"
+        android:layout_alignLeft="@+id/userNameTxtView"
+        android:layout_alignStart="@+id/userNameTxtView" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordEditText"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/userNameEditText"
+        android:layout_alignLeft="@+id/userNameEditText"
+        android:layout_alignStart="@+id/userNameEditText" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/userNameEditText"
+        android:layout_alignBaseline="@+id/userNameTxtView"
+        android:layout_alignBottom="@+id/userNameTxtView"
+        android:layout_toRightOf="@+id/userNameTxtView"
+        android:layout_toEndOf="@+id/userNameTxtView"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp" />
+</RelativeLayout>
